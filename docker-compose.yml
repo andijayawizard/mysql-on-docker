@@ -19,14 +19,14 @@ services:
       - mysql-network
 
   # web based mysql
-  adminer:
-    container_name: adminer
-    image: adminer
-    restart: always
-    ports:
-      - "8091:8080"
-    networks:
-      - mysql-network
+  # adminer:
+  #   container_name: adminer
+  #   image: adminer
+  #   restart: always
+  #   ports:
+  #     - "8091:8080"
+  #   networks:
+  #     - mysql-network
 
 volumes:
   db_mysql:
